@@ -70,3 +70,33 @@ if (c % 10 == 0 || c % 10 == c) {
     console.log(a % 10 * Math.pow(10, n - 1) + (a - a % 10) / 10);
 }
 
+//5.	Given five numbers as input. Calculate and print the average of the numbers.
+
+let a = 45;
+let b = -12;
+let c = 0;
+let d = 3;
+let e = -15;
+
+function averageOfNumber(a, b, c, d, e) {
+    return ((a + b + c + d + e + f) / 5);
+}
+console.log(averageOfNumber(45, -12, 0, 3, -15));
+
+//6.	Given an age, figure out whether someone is a baby(1 months - 12 months), toddler (1 year - 2 years), child(3 years - 12 years ), teenager(13 years - 17 years) or adult(18 years and more ). Also check that age in months is between 1 and 12. 
+
+let x = 8, y = "months";
+
+if (y == "months") {
+    console.log("baby");
+} else {
+    if (x <= 2) {
+        console.log("toddler");
+    } else if (x <= 12) {
+        console.log("child");
+    } else if (x <= 17) {
+        console.log("teenager");
+    } else {
+        console.log("adult");
+    }
+}
