@@ -1,4 +1,4 @@
-//1.	Given a number. Print “odd” if the number is odd and “even” if it’s even.
+ï»¿//1.	Given a number. Print â€œoddâ€ if the number is odd and â€œevenâ€ if itâ€™s even.
 
 let x = 123;
 
@@ -130,3 +130,49 @@ if (x == 0 || y == 0) {
 } else {
     console.log("+");
 }
+
+//9. Input three numbers a, b, c respectively, where a is a non zero number and write a program to solve quadratic equations: ã€–axã€—^2+ bx+c=0. (Hint: use Math.pow or Math.sqrt).
+
+let a = 1, b = 2, c = 1;
+let x1, x2, d;
+
+if (a == 0) {
+    console.log("Enter valid constans");
+} else {
+
+    d = Math.pow(b, 2) - 4 * a * c;
+    if (d < 0) {
+        console.log("Solution does not exists");
+    } else {
+
+        x1 = (-b - Math.sqrt(d)) / (2 * a);
+        x2 = (-b + Math.sqrt(d)) / (2 * a);
+
+        if (x1 == x2) {
+            console.log("Solution is " + x1);
+        } else {
+            console.log("Solutions are " + x1 + " and " + x2);
+        }
+    }
+}
+
+//10.	Insert a digit and a number. Check whether the digits contains in the number or not.
+let x = 2463;
+let y = 5;
+let answer = "NO"
+
+
+while (x != 0) {
+    if (x % 10 == y) {
+        console.log("YES");
+        answer = "YES";
+        break;
+    }
+    x = (x - x % 10) / 10;
+}
+
+
+if (answer == "NO") {
+    console.log("NO");
+}
+
