@@ -100,3 +100,33 @@ if (y == "months") {
         console.log("adult");
     }
 }
+
+//7.	Given three numbers. Sort them by the ascending order.
+
+let x = 45, y = 26, z = 78;
+
+if (x == Math.min(x, y, z) && y == Math.max(x, y, z)) {
+    console.log(x, z, y);
+} else if (x == Math.max(x, y, z) && y == Math.min(x, y, z)) {
+    console.log(y, z, x);
+} else if (x == Math.min(x, y, z) && z == Math.max(x, y, z)) {
+    console.log(x, y, z);
+} else if (x == Math.max(x, y, z) && z == Math.min(x, y, z)) {
+    console.log(z, y, x);
+} else if (y == Math.min(x, y, z) && z == Math.max(x, y, z)) {
+    console.log(y, x, z);
+} else {
+    console.log(z, x, y);
+}
+
+//8.	Find the sign of product of two numbers without multiplication operator. Display the specified sign.
+
+let x = -14, y = 0;
+
+if (x == 0 || y == 0) {
+    console.log("unsigned");
+} else if (x / y < 0) {
+    console.log("-");
+} else {
+    console.log("+");
+}
